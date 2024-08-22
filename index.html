@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<title>Climate App</title>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+		<link
+			rel="stylesheet"
+			href="styles.css" />
+	</head>
+	<body class="body">
+		<div class="gradient"></div>
+		<div class="main-app">
+			<header class="header">
+				<img
+					class="header_icon"
+					src="./images/SVG/few-clouds-day.svg"
+					alt="Climate App logo" />
+				<form class="search-bar">
+					<input
+						id="input"
+						autocomplete="off"
+						type="text"
+						name="input_text"
+						placeholder="New York"
+						tabindex="0"
+						class="search-bar_input" />
+					<ul
+						id="inputSuggestions"
+						class="search-bar_suggestions"></ul>
+				</form>
+			</header>
+			<main class="main">
+				<div class="info">
+					<img
+						class="info_image"
+						src="./images/SVG/clear-sky-day.svg"
+						alt="Sunny day icon" />
+					<h2 class="info_temperature"></h2>
+					<p class="info_condition"></p>
+				</div>
+				<div class="info-extra">
+					<h3 class="info-extra_location">
+						<span class="info-extra_city"></span>
+						<span class="info-extra_country"></span>
+					</h3>
+					<div class="info-conditions">
+						<div class="info-conditions_wrapper">
+							<img
+								class="info-conditions-icon"
+								src="./images/SVG/humidity.svg"
+								alt="Humidity icon" />
+							<div>
+								<p
+									class="info-conditions_stat info-conditions_humidity-percentage"></p>
+								<p class="info-conditions_text">Humidity</p>
+							</div>
+						</div>
+						<div class="info-conditions_wrapper">
+							<img
+								class="info-conditions-icon"
+								src="./images/SVG/wind.svg"
+								alt="Wind speed icon" />
+							<div>
+								<p
+									class="info-conditions_stat info-conditions_wind-speed-speed"></p>
+								<p class="info-conditions_text">Wind Speed</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</main>
+		</div>
+		<footer class="footer">
+			<p>
+				<a
+					class="footer_ref"
+					tabindex="-1"
+					href="https://www.freepik.com/free-vector/gradients-weather-icons-apps_15292633.htm#query=weather&position=2&from_view=author&uuid=c575764f-4084-4ff2-b626-6e7fc9d1ce99"
+					target="_blank"
+					>Images by coolvector</a
+				>
+				on Freepik
+			</p>
+		</footer>
+		<script src="constants.js"></script>
+		<script src="utility.js"></script>
+		<script src="script.js"></script>
+	</body>
+</html>
